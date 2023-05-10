@@ -4,6 +4,7 @@ import com.portfolioWebCvb.ArgPrograma.model.Persona;
 import com.portfolioWebCvb.ArgPrograma.service.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@CrossOrigin(origins ="*")
 @RequestMapping("/personas")
 public class PersonaController {
     
@@ -31,8 +33,8 @@ public class PersonaController {
     
     @GetMapping("/ver")
     @ResponseBody
-    public List<Persona> verPersonas(){
-        return persoServ.verPersonas();
+    public Persona verPersona(){
+        return persoServ.verPersona();
     }
     
     
@@ -45,6 +47,9 @@ public class PersonaController {
     public void modificarPersona(@RequestBody Persona pers){
         persoServ.modificarPersona(pers);
     }
+    
+  
+    
     
    
 }

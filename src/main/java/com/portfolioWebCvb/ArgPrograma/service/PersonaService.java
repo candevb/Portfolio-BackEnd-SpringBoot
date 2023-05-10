@@ -14,8 +14,8 @@ public class PersonaService implements IPersonaService{
     public PersonaRepository persoRepo;
 
     @Override
-    public List<Persona> verPersonas() {
-        return persoRepo.findAll();
+    public Persona verPersona() {
+        return persoRepo.findAll().get(0);
     }
 
     @Override
@@ -36,6 +36,9 @@ public class PersonaService implements IPersonaService{
     public void modificarPersona(Persona per) {
         persoRepo.save(per);
     }
+
+    
+    
 
     
     
