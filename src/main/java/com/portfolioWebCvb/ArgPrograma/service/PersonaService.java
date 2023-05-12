@@ -2,7 +2,6 @@ package com.portfolioWebCvb.ArgPrograma.service;
 
 import com.portfolioWebCvb.ArgPrograma.model.Persona;
 import com.portfolioWebCvb.ArgPrograma.repository.PersonaRepository;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

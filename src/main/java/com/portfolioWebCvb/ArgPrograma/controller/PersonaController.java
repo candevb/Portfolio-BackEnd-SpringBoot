@@ -2,7 +2,6 @@ package com.portfolioWebCvb.ArgPrograma.controller;
 
 import com.portfolioWebCvb.ArgPrograma.model.Persona;
 import com.portfolioWebCvb.ArgPrograma.service.IPersonaService;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins ="*")
+@CrossOrigin(origins = {"https://portfolio-frontend-cvb.web.app", "http://localhost:4200/"})
 @RequestMapping("/personas")
 public class PersonaController {
     

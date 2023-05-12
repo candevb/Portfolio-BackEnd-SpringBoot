@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ExperienciaService implements IExperienciaService{
-    
+public class ExperienciaService implements IExperienciaService {
+
     @Autowired
     public ExperienciaRepository expeRepo;
 
@@ -34,9 +34,8 @@ public class ExperienciaService implements IExperienciaService{
 
     @Override
     public void modificarExperiencia(Experiencia exp) {
-         expeRepo.save(exp);
-    
+        expeRepo.save(exp);
+
     }
-  
-    
+
 }

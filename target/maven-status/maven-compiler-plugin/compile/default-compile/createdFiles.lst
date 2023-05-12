@@ -8,7 +8,6 @@ com\portfolioWebCvb\ArgPrograma\model\Persona.class
 com\portfolioWebCvb\ArgPrograma\service\IEducacionService.class
 com\portfolioWebCvb\ArgPrograma\WebConfig.class
 com\portfolioWebCvb\ArgPrograma\controller\ExperienciaController.class
-com\portfolioWebCvb\ArgPrograma\controller\persoService.class
 com\portfolioWebCvb\ArgPrograma\model\Skills.class
 com\portfolioWebCvb\ArgPrograma\service\PersonaService.class
 com\portfolioWebCvb\ArgPrograma\repository\EducacionRepository.class
